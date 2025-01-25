@@ -4,7 +4,8 @@ import CoverLetterGenerator from './components/CoverLetterGenerator';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-white-100 flex items-center justify-center">
+      
       <CoverLetterGenerator />
     </div>
   );
