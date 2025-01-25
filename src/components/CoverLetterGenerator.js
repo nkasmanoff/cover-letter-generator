@@ -2,7 +2,6 @@
 import Groq from "groq-sdk";
 import React, { useState } from 'react';
 import BuyMeCoffeeButton from "./BuyMeCoffeeButton";
-import Footer from "./Footer";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Textarea } from "./ui/textarea";
@@ -64,12 +63,6 @@ Please write a compelling cover letter that highlights relevant experience and s
 
   return (
     <div className="flex flex-col w-full max-w-7xl">
-      <header className="sticky top-0 w-full bg-white shadow-md z-50 py-4 px-4">
-        <div className="flex justify-end">
-          <BuyMeCoffeeButton />
-        </div>
-      </header>
-
       <main className="flex-1 p-8">
         <Card className="w-full shadow-xl bg-white">
           <CardHeader className="pb-6">
@@ -143,7 +136,22 @@ Please write a compelling cover letter that highlights relevant experience and s
         </Card>
       </main>
 
-      <Footer className="mt-auto" />
+      <header className="w-full bg-white shadow-md py-4 px-4 mt-8">
+        <div className="flex justify-between items-center">
+          <div className="text-lg font-medium text-gray-700">
+            Made by <a 
+              href="https://noahkasmanoff.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-indigo-600 hover:text-indigo-800 transition-colors"
+            >
+              Noah Kasmanoff
+            </a>
+          </div>
+          <BuyMeCoffeeButton />
+        </div>
+      </header>
+
     </div>
   );
 };
