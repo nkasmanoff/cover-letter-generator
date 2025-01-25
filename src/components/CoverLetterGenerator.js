@@ -140,7 +140,7 @@ Please write a compelling cover letter that highlights relevant experience and s
         <div className="flex justify-between items-center">
           <div className="text-lg font-medium text-gray-700">
             Made by <a 
-              href="https://noahkasmanoff.com" 
+              href="https://nkasmanoff.github.io/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-indigo-600 hover:text-indigo-800 transition-colors"
